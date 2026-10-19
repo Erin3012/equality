@@ -4,201 +4,14 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Equality Consultores: servicios integrales de consultoría, capacitación, diseño de planes, auditorías e higiene industrial para organizaciones y profesionales desde la Región del Biobío, para todo Chile."><meta name="theme-color" content="#0b2f63">
 <title>Equality Consultores · Servicios integrales para organizaciones</title>
-<style>
-:root{--navy:#0b2f63;--navy-2:#123f80;--blue:#1d6fd1;--sky:#dbe8f8;--ink:#0d1b2e;--muted:#4f5f75;--paper:#ffffff;--soft:#f3f6fb;--line:#dde5f0;--green:#1fa34a;--green-2:#178a3d}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-button{font:inherit}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
-.wrap{max-width:1240px;margin:auto;padding:0 6%}
-h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.5px;line-height:1.15}
-h2{font-size:clamp(26px,3vw,38px);color:var(--navy)}
-h3{font-size:20px}
-p{margin:0}
-
-/* Encabezado */
-header{position:sticky;top:0;z-index:10;background:#ffffffef;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:14px;min-width:0}
-.brand-logo{display:block;position:relative;overflow:hidden;border-radius:50%;width:64px;height:64px;flex:none;background:#7775ad}
-.brand-logo img{position:absolute;width:542%;max-width:none;left:-31%;top:-144%;height:auto}
-.wordmark{font-size:19px;font-weight:700;color:var(--navy);line-height:1.05}
-.wordmark small{display:block;font-size:12px;font-weight:400;color:var(--muted);margin-top:4px;letter-spacing:.2px}
-.navlinks{display:flex;align-items:center;gap:6px;font-size:13px}
-.navlinks a{padding:9px 12px;border-radius:5px;color:var(--ink);white-space:nowrap}
-.navlinks a:hover{background:var(--soft)}
-.navlinks a.current{background:var(--navy);color:#fff}
-.menu{display:none;background:none;border:1px solid var(--line);padding:9px 12px;border-radius:5px;color:var(--navy)}
-
-/* Botones */
-.button{display:inline-flex;justify-content:center;align-items:center;gap:12px;padding:14px 22px;border-radius:6px;background:var(--blue);color:#fff;font-size:14px;font-weight:700;border:1px solid var(--blue);transition:background .2s,transform .2s;white-space:nowrap}
-.button:hover{background:var(--navy-2);transform:translateY(-1px)}
-.button.outline{background:transparent;color:#fff;border-color:#fff}
-.button.outline:hover{background:#fff;color:var(--navy)}
-.button.green{background:var(--green);border-color:var(--green)}
-.button.green:hover{background:var(--green-2)}
-.button.ghost{background:transparent;color:var(--blue);border-color:var(--blue)}
-.button.ghost:hover{background:var(--sky);color:var(--navy)}
-.textlink{display:inline-flex;gap:8px;font-size:13px;font-weight:700;color:var(--blue);border-bottom:1px solid #b9cfee;padding-bottom:3px}
-.textlink:hover{color:var(--navy)}
-
-/* Imágenes pendientes (marcadores de posición) */
-.ph{position:relative;background:linear-gradient(135deg,#1b4a8a,#0b2f63 60%,#08234b);color:#cfe0f5;display:flex;align-items:flex-end;justify-content:flex-start;padding:14px;font-size:11px;letter-spacing:.4px;overflow:hidden}
-.ph:before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,#ffffff0d 0 2px,transparent 2px 12px)}
-.ph span{position:relative;background:#0b2f63cc;padding:5px 9px;border-radius:4px}
-
-/* Portada */
-.hero{background:linear-gradient(100deg,#ffffff 0 46%,#eef4fb 46%);position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:center;padding-top:64px;padding-bottom:64px}
-.kicker{font-size:11px;letter-spacing:1.6px;font-weight:700;color:var(--blue);text-transform:uppercase}
-.kicker span{color:var(--muted);font-weight:400;margin:0 6px}
-.hero h1{font-size:clamp(38px,4.9vw,60px);color:var(--navy);margin:18px 0 20px;letter-spacing:-1.5px}
-.hero .lead{font-size:18px;color:var(--muted);max-width:520px;line-height:1.6}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0 36px;max-width:560px}
-.feature{display:flex;gap:12px;align-items:flex-start;font-size:13px;color:var(--muted);line-height:1.45}
-.feature b{display:block;color:var(--ink);font-size:13px;margin-bottom:2px}
-.icon-circle{width:46px;height:46px;border-radius:50%;background:var(--blue);display:grid;place-items:center;flex:none}
-.icon-circle svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.actions{display:flex;flex-wrap:wrap;gap:14px}
-.hero-visual{position:relative;height:440px;border-radius:14px;overflow:hidden}
-.hero-visual .ph{position:absolute;inset:0;border-radius:14px}
-.hero-card{position:absolute;left:20px;top:20px;background:#ffffffef;color:var(--navy);padding:16px 20px;border-radius:8px;font-size:17px;font-weight:700;line-height:1.3;max-width:280px;z-index:1;box-shadow:0 6px 24px #0b2f6326}
-
-/* Secciones generales */
-section{padding:80px 0}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px;flex-wrap:wrap}
-.section-head p{max-width:360px;color:var(--muted);font-size:14px}
-.bar{height:2px;background:var(--blue);width:70px;margin-top:14px}
-
-/* Servicios */
-.services{background:var(--soft)}
-.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;align-items:stretch}
-.service{background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;scroll-margin-top:100px}
-.service .ph{height:120px;border-radius:0}
-.service-title{background:var(--navy);color:#fff;padding:16px 16px 18px;position:relative}
-.service-title .num{font-size:24px;font-weight:700;color:#8fb6ea;display:block;line-height:1}
-.service-title h3{font-size:16px;margin-top:8px;line-height:1.25;letter-spacing:-.2px}
-.service ul{list-style:none;margin:0;padding:16px 18px;font-size:13px;color:var(--muted);flex:1}
-.service li{padding:5px 0 5px 16px;position:relative;border-bottom:1px dashed #e3e9f2}
-.service li:last-child{border-bottom:0}
-.service li:before{content:'';position:absolute;left:0;top:13px;width:6px;height:6px;border-radius:50%;background:var(--blue)}
-.service .more{padding:0 18px 18px}
-
-/* Quiénes somos */
-.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:start}
-.about-grid p+p{margin-top:16px}
-.about-grid .body{color:var(--muted);font-size:16px;line-height:1.75}
-.about-grid .body strong{color:var(--ink)}
-.identity{background:var(--navy);color:#e6eefb;border-radius:12px;padding:34px}
-.identity h3{color:#fff;font-size:22px;margin-bottom:14px}
-.identity-row{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}
-.identity-row .brand-logo{width:120px;height:120px}
-.identity p{font-size:14px;line-height:1.7;color:#cfdcef}
-.purpose{margin-top:22px;border:1px solid var(--line);border-radius:12px;padding:30px}
-.purpose h3{color:var(--navy);margin-bottom:18px;font-size:20px}
-.purpose-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;list-style:none;margin:0;padding:0}
-.purpose-list li{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--ink)}
-.purpose-list .icon-circle{width:38px;height:38px}
-.purpose-list .icon-circle svg{width:18px;height:18px}
-.values{margin-top:22px;font-size:15px;color:var(--muted);font-style:italic;border-left:3px solid var(--blue);padding-left:16px}
-
-/* Biobío */
-.reach{padding:0;background:var(--navy-2);color:#fff}
-.reach-grid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
-.reach-copy{padding:70px 6% 70px 6%;display:flex;flex-direction:column;justify-content:center}
-.reach-copy h2{color:#fff;font-size:clamp(28px,3.2vw,42px)}
-.reach-copy p{margin-top:18px;color:#d6e3f5;font-size:15px;max-width:460px}
-.reach-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:34px;border-top:1px solid #3f6aa3}
-.reach-stats div{padding:20px 14px 0 0;font-size:13px;color:#d6e3f5}
-.reach-stats b{display:block;color:#fff;font-size:15px;margin-bottom:4px}
-.reach .ph{min-height:320px;border-radius:0}
-
-/* Acreditaciones */
-.accred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.accred{border:1px solid var(--line);border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:16px;background:#fff}
-.logo-slot{height:84px;border:1px dashed #a9bcd8;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;font-size:13px;font-weight:700;color:var(--navy);background:var(--soft);padding:8px}
-.logo-slot small{font-size:11px;font-weight:400;color:var(--muted)}
-.accred h3{font-size:18px;color:var(--navy)}
-.accred p{font-size:14px;color:var(--muted);line-height:1.65;flex:1}
-.accred .textlink{align-self:flex-start}
-.fine{font-size:12px;color:#6b7a90;margin-top:24px;max-width:820px}
-
-/* Clientes */
-.clients{background:var(--soft)}
-.client-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.client{background:#fff;border:1px solid var(--line);border-radius:8px;min-height:96px;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:14px;font-weight:700;color:var(--navy)}
-.client.other{font-weight:400;color:var(--muted);flex-direction:column;gap:4px;font-size:13px}
-
-/* Contacto */
-.contact{background:var(--navy);color:#fff;padding:70px 0}
-.contact-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:center}
-.contact h2{color:#fff;font-size:clamp(26px,3vw,36px)}
-.contact p{color:#cfdcef;font-size:14px;margin-top:12px}
-.contact-block{display:flex;flex-direction:column;gap:14px;border-left:1px solid #3f6aa3;padding-left:34px}
-.contact-block small{color:#a9c2e6;font-size:13px}
-.contact-block .button{align-self:flex-start}
-.contact-links{display:flex;flex-direction:column;gap:6px;font-size:14px;color:#fff;overflow-wrap:anywhere}
-
-/* Pie */
-footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
-.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
-.footer-inner .brand-logo{width:44px;height:44px}
-.footer-inner .wordmark{font-size:15px}
-.footer-inner .wordmark small{font-size:10px}
-
-/* Responsivo */
-@media(max-width:1100px){.cards{grid-template-columns:repeat(3,1fr)}.navlinks a{padding:8px 9px}}
-@media(max-width:900px){
-  .hero-grid,.about-grid,.reach-grid,.contact-grid{grid-template-columns:1fr}
-  .hero{background:#fff}
-  .hero-visual{height:380px}
-  .reach-grid .ph{min-height:260px}
-  .contact-block{border-left:0;padding-left:0;border-top:1px solid #3f6aa3;padding-top:26px}
-  .accred-grid{grid-template-columns:1fr}
-  .client-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:700px){
-  .wrap{padding:0 16px}
-  .nav{height:72px}
-  .brand-logo{width:50px;height:50px}
-  .wordmark{font-size:16px}
-  .wordmark small{font-size:10px}
-  .menu{display:block}
-  .navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:14px 16px 20px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:2px}
-  .navlinks.open{display:flex}
-  .navlinks a{padding:12px}
-  .hero-grid{padding-top:40px;padding-bottom:40px;gap:32px}
-  .hero h1{letter-spacing:-1px}
-  .hero .lead{font-size:16px}
-  .features{grid-template-columns:1fr;gap:14px}
-  .hero-visual{height:300px}
-  .hero-card{font-size:14px;right:12px;bottom:12px;max-width:220px;padding:12px 14px}
-  section{padding:56px 0}
-  .cards{grid-template-columns:1fr}
-  .purpose-list{grid-template-columns:1fr}
-  .identity{padding:24px}
-  .identity-row{grid-template-columns:1fr;justify-items:start}
-  .purpose{padding:22px}
-  .reach-copy{padding:48px 16px}
-  .reach-stats{grid-template-columns:1fr}
-  .reach-stats div{padding:14px 0}
-  .client-grid{grid-template-columns:1fr 1fr;gap:10px}
-  .client{min-height:80px;font-size:13px;padding:10px}
-  .contact{padding:50px 0}
-  .actions .button{width:100%}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <header>
   <div class="wrap nav">
     <a class="brand" href="#inicio" aria-label="Equality Consultores, inicio">
       <span class="brand-logo"><img src="assets/perfil-instagram.jpg" alt="Logotipo de Equality Consultores"></span>
-      <span class="wordmark">EQUALITY CONSULTORES<small>Servicios integrales para organizaciones y profesionales</small></span>
+      <span class="wordmark">EQUALITY<br>CONSULTORES<small>Servicios integrales para organizaciones y profesionales</small></span>
     </a>
     <button class="menu" aria-controls="navigation" aria-expanded="false">Menú ☰</button>
     <nav class="navlinks" id="navigation" aria-label="Navegación principal">
@@ -220,7 +33,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
       <div class="kicker">Consultoría<span>|</span>Capacitación<span>|</span>Diseño<span>|</span>Auditorías<span>|</span>Higiene industrial</div>
       <h1>Soluciones integrales para su organización</h1>
       <p class="lead">Conocimiento técnico, experiencia y compromiso para el desarrollo de personas y organizaciones.</p>
-      <div class="features" style="margin-top:34px">
+      <div class="features">
         <div class="feature">
           <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.2 3-5 6-5s5.4 1.8 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14c2.4 0 4.5 1.4 5 4"/></svg></span>
           <span><b>Experiencia</b>en el sector público y privado</span>
@@ -236,13 +49,10 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
       </div>
       <div class="actions">
         <a class="button" href="#servicios">Conozca nuestros servicios <span aria-hidden="true">→</span></a>
-        <a class="button ghost" href="#contacto">Solicite una cotización</a>
+        <a class="button outline" href="#contacto">Solicite una cotización</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="ph ph-prueba" style="background:url(assets/prueba/prueba-hero.svg) center/cover no-repeat"><span>Imagen de prueba</span></div>
-      <div class="hero-card">Desde la Región del Biobío para todo Chile</div>
-    </div>
+    <div class="hero-card"><span class="location-pin" aria-hidden="true">⌖</span>Desde la Región del Biobío<br>para todo Chile</div>
   </div>
 </section>
 
@@ -257,22 +67,22 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
     </div>
     <div class="cards">
       <article class="service" id="consultoria">
-        <div class="ph ph-prueba" style="background:url(assets/prueba/prueba-consultoria.svg) center/cover no-repeat"><span>Imagen de prueba</span></div>
-        <div class="service-title"><span class="num">01</span><h3>Consultoría especializada</h3></div>
+        <img class="service-photo" src="assets/photos/consultoria.jpg" alt="" loading="lazy" width="400" height="200">
+        <div class="service-title"><span class="num">01</span><h3>Consultoría especializada</h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0v3M17 6a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 5"/></svg></span></div>
         <ul>
           <li>Seguridad privada</li>
           <li>Prevención de riesgos</li>
           <li>Salud ocupacional</li>
           <li>Normas ISO</li>
           <li>Medio ambiente</li>
-          <li>Procesos productivos</li>
+          <li>Procesos productivos</li><li>Modelos de trabajo</li>
           <li>Metodologías Lean y S&amp;OP</li>
         </ul>
         <div class="more"><a class="textlink" href="#contacto">Más información →</a></div>
       </article>
       <article class="service" id="capacitacion">
-        <div class="ph ph-prueba" style="background:url(assets/prueba/prueba-capacitacion.svg) center/cover no-repeat"><span>Imagen de prueba</span></div>
-        <div class="service-title"><span class="num">02</span><h3>Capacitación y formación</h3></div>
+        <img class="service-photo" src="assets/photos/capacitacion.jpg" alt="" loading="lazy" width="400" height="200">
+        <div class="service-title"><span class="num">02</span><h3>Capacitación y formación</h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m2 8 10-5 10 5-10 5L2 8zm4 3v7q6 5 12 0v-7m4-3v10"/></svg></span></div>
         <ul>
           <li>Curso PAC (MOP)</li>
           <li>Seguridad privada</li>
@@ -286,8 +96,8 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
         <div class="more"><a class="textlink" href="#contacto">Más información →</a></div>
       </article>
       <article class="service" id="diseno">
-        <div class="ph ph-prueba" style="background:url(assets/prueba/prueba-planes.svg) center/cover no-repeat"><span>Imagen de prueba</span></div>
-        <div class="service-title"><span class="num">03</span><h3>Diseño de planes y proyectos</h3></div>
+        <img class="service-photo" src="assets/photos/planes.jpg" alt="" loading="lazy" width="400" height="200">
+        <div class="service-title"><span class="num">03</span><h3>Diseño de planes y proyectos</h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h6M9 11h6M9 15h6M9 18h4"/></svg></span></div>
         <ul>
           <li>Planes de seguridad privada</li>
           <li>Planes para eventos masivos</li>
@@ -298,8 +108,8 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
         <div class="more"><a class="textlink" href="#contacto">Más información →</a></div>
       </article>
       <article class="service" id="auditorias">
-        <div class="ph ph-prueba" style="background:url(assets/prueba/prueba-auditorias.svg) center/cover no-repeat"><span>Imagen de prueba</span></div>
-        <div class="service-title"><span class="num">04</span><h3>Auditorías y evaluación de cumplimiento</h3></div>
+        <img class="service-photo" src="assets/photos/consultoria.jpg" alt="" loading="lazy" width="400" height="200">
+        <div class="service-title"><span class="num">04</span><h3>Auditorías y evaluación</h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="16" rx="1"/><path d="M9 3h6v4H9zm0 12 2 2 4-5"/></svg></span></div>
         <ul>
           <li>Auditorías de planes de calidad MOP</li>
           <li>Sistemas de gestión ISO</li>
@@ -309,8 +119,8 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
         <div class="more"><a class="textlink" href="#contacto">Más información →</a></div>
       </article>
       <article class="service" id="higiene">
-        <div class="ph ph-prueba" style="background:url(assets/prueba/prueba-higiene.svg) center/cover no-repeat"><span>Imagen de prueba</span></div>
-        <div class="service-title"><span class="num">05</span><h3>Higiene industrial y ergonomía</h3></div>
+        <img class="service-photo" src="assets/photos/higiene.jpg" alt="" loading="lazy" width="400" height="200">
+        <div class="service-title"><span class="num">05</span><h3>Higiene industrial y ergonomía</h3><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/></svg></span></div>
         <ul>
           <li>Evaluaciones de exposición ocupacional</li>
           <li>Mediciones de ruido y sílice</li>
@@ -323,29 +133,13 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
   </div>
 </section>
 
-<section id="quienes">
-  <div class="wrap about-grid">
-    <div>
-      <div class="kicker">Quiénes somos</div>
-      <h2 style="margin-top:14px">Transformamos el conocimiento técnico en soluciones prácticas.</h2>
-      <div class="bar"></div>
-      <div class="body" style="margin-top:26px">
-        <p>Equality Consultores nace con el propósito de promover la igualdad de oportunidades, el aprendizaje y el crecimiento profesional mediante soluciones integrales de consultoría, capacitación y asistencia técnica.</p>
-        <p>Desde la Región del Biobío, desarrollamos servicios especializados en seguridad y salud ocupacional, seguridad privada, sistemas de gestión, calidad, medio ambiente y procesos productivos.</p>
-        <p>Nuestra metodología combina conocimientos técnicos, experiencia profesional y herramientas prácticas, permitiéndonos acompañar a organizaciones, empresas y profesionales en sus desafíos de gestión y cumplimiento normativo.</p>
-        <p>Gracias a las modalidades de trabajo presencial y online, extendemos nuestros servicios a clientes de todo Chile.</p>
-        <p><strong>Nuestro compromiso es transformar el conocimiento técnico en soluciones prácticas, confiables y aplicables.</strong></p>
-      </div>
-    </div>
-    <div>
-      <div class="identity">
+<section id="quienes"><div class="wrap about-grid"><div class="identity">
         <h3>Nuestra identidad</h3>
         <div class="identity-row">
           <span class="brand-logo"><img src="assets/perfil-instagram.jpg" alt="Logotipo de Equality Consultores"></span>
-          <p>Un brazo y una mano que forman un círculo simbolizan nuestro compromiso de acoger a todas las personas por igual. En su interior, un tablero de ajedrez sin rey, donde peones conviven con una reina o dama, refleja nuestra convicción de que el conocimiento, las oportunidades y el desarrollo profesional no deben estar determinados por jerarquías.</p>
-        </div>
-      </div>
-      <div class="purpose">
+          <p>El brazo y la mano en círculo representan nuestro compromiso de abrazar a todas las personas por igual. Un tablero de ajedrez sin rey, donde peones conviven con una dama, simboliza la equidad, la colaboración y el valor de cada persona.</p>
+        </div><details class="about-details"><summary>Conozca más sobre nosotros <span aria-hidden="true">→</span></summary><p>Equality Consultores promueve la igualdad de oportunidades, el aprendizaje y el crecimiento profesional mediante consultoría, capacitación y asistencia técnica. Nuestra metodología combina conocimientos técnicos y herramientas prácticas para acompañar a organizaciones de todo Chile.</p></details>
+      </div><div class="purpose">
         <h3>Nuestro propósito</h3>
         <ul class="purpose-list">
           <li><span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.2 3-5 6-5s5.4 1.8 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14c2.4 0 4.5 1.4 5 4"/></svg></span>Igualdad de oportunidades</li>
@@ -353,26 +147,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
           <li><span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>Soluciones con sentido</li>
           <li><span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg></span>Compromiso con el desarrollo</li>
         </ul>
-        <p class="values">La igualdad nos inspira, la equidad nos guía y el crecimiento profesional nos compromete.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="reach" id="experiencia">
-  <div class="reach-grid">
-    <div class="reach-copy">
-      <h2>Desde la Región del Biobío para todo Chile</h2>
-      <p>Atendemos a organizaciones y profesionales de forma presencial y online, con la misma metodología y el mismo compromiso con resultados aplicables.</p>
-      <div class="reach-stats">
-        <div><b>Atención nacional</b>Clientes en todo Chile</div>
-        <div><b>Modalidad online y presencial</b>Según cada necesidad</div>
-        <div><b>Experiencia</b>En el sector público y privado</div>
-      </div>
-    </div>
-    <div class="ph ph-prueba" style="background:url(assets/prueba/prueba-extra.svg) center/cover no-repeat"><span>Imagen de prueba</span></div>
-  </div>
-</section>
+      </div><article class="reach" id="experiencia"><div class="reach-banner"><h3>Desde la<br>Región del Biobío<br>para todo Chile</h3></div><div class="reach-stats"><div><span aria-hidden="true">⌖</span>Atención<br>nacional</div><div><span aria-hidden="true">▱</span>Modalidad<br>online y presencial</div><div><span aria-hidden="true">↗</span>Experiencia<br>en el sector público<br>y privado</div></div></article></div></section>
 
 <section id="acreditaciones">
   <div class="wrap">
@@ -385,19 +160,19 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
     </div>
     <div class="accred-grid">
       <article class="accred">
-        <div class="logo-slot">Ministerio de Obras Públicas<br><small>Logo oficial pendiente</small></div>
+        <div class="institution-mark"><span>Ministerio de<br>Obras Públicas</span><small>Gobierno de Chile</small></div>
         <h3>Ministerio de Obras Públicas (MOP)</h3>
         <p>Curso PAC de 40 horas con plan de estudios constatado por la Dirección de Vialidad, según Resolución N.º 2834 vigente.</p>
         <a class="textlink" href="mailto:equalityconsultores2022@gmail.com?subject=Solicitud%20de%20documentaci%C3%B3n%20de%20acreditaci%C3%B3n%20MOP">Solicitar documentación →</a>
       </article>
       <article class="accred">
-        <div class="logo-slot">Subsecretaría de Prevención del Delito<br><small>Logo oficial pendiente</small></div>
+        <div class="institution-mark"><span>Subsecretaría<br>de Prevención<br>del Delito</span><small>Gobierno de Chile</small></div>
         <h3>Subsecretaría de Prevención del Delito (SPD)</h3>
         <p>Acreditación para el desarrollo de actividades de capacitación en materias de seguridad privada.</p>
         <a class="textlink" href="mailto:equalityconsultores2022@gmail.com?subject=Solicitud%20de%20acreditaci%C3%B3n%20SPD">Solicitar acreditación →</a>
       </article>
       <article class="accred">
-        <div class="logo-slot">SEREMI de Salud<br><small>Logo oficial pendiente</small></div>
+        <div class="institution-mark"><span>SEREMI<br>de Salud</span><small>Gobierno de Chile</small></div>
         <h3>SEREMI de Salud</h3>
         <p>Acreditación o autorización sanitaria para la realización de actividades técnicas en el ámbito de la salud ocupacional e higiene industrial.</p>
         <a class="textlink" href="mailto:equalityconsultores2022@gmail.com?subject=Solicitud%20de%20acreditaci%C3%B3n%20SEREMI">Solicitar acreditación →</a>
@@ -416,15 +191,14 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
       <p>Experiencia en auditorías de planes de calidad MOP y asesoría técnica en el sector construcción e infraestructura.</p>
     </div>
     <div class="client-grid">
-      <div class="client">AFA Ingeniería y Construcción</div>
-      <div class="client">SEGASA Ltda.</div>
-      <div class="client">Echeverría Izquierdo</div>
-      <div class="client">Constructora RDMI</div>
-      <div class="client">DEMCO Rental SpA</div>
-      <div class="client">Sergio Cerva S.A.</div>
+      <div class="client"><strong class="afa">AFA</strong><span>Ingeniería y Construcción</span></div>
+      <div class="client"><strong class="segasa">SEGASA</strong><span>SEGASA Ltda.</span></div>
+      <div class="client"><strong class="echeverria">Echeverría<br>Izquierdo</strong><span>Echeverría Izquierdo</span></div>
+      <div class="client"><strong class="rdmi">RDMI</strong><span>Constructora RDMI</span></div>
+      <div class="client"><strong class="demco">DEMCO</strong><span>DEMCO Rental SpA</span></div>
+      <div class="client"><strong class="cerva">SERGIO CERVA S.A.</strong><span>Sergio Cerva S.A.</span></div>
       <div class="client other"><span aria-hidden="true">🏢</span>Entre otras empresas</div>
     </div>
-    <p class="fine">Presentación preliminar basada en los clientes indicados. Incorporaremos sus logotipos oficiales cuando contemos con su autorización para publicarlos.</p>
   </div>
 </section>
 
@@ -439,7 +213,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
       <a class="button green" href="https://wa.me/56978883812?text=Hola%2C%20quisiera%20conversar%20sobre%20un%20servicio%20de%20Equality%20Consultores." target="_blank" rel="noopener noreferrer">Contáctenos ahora <span aria-hidden="true">→</span></a>
     </div>
     <div class="contact-block">
-      <small>O escríbanos o llámenos</small>
+      <small>Solicite información para su proyecto</small>
       <div class="contact-links">
         <a href="mailto:equalityconsultores2022@gmail.com">equalityconsultores2022@gmail.com</a>
         <a href="tel:+56978883812">+56 9 7888 3812</a>
@@ -454,7 +228,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:12px;color:var(
   <div class="wrap footer-inner">
     <a class="brand" href="#inicio" aria-label="Volver al inicio">
       <span class="brand-logo"><img src="assets/perfil-instagram.jpg" alt="Logotipo de Equality Consultores"></span>
-      <span class="wordmark">EQUALITY CONSULTORES<small>Servicios integrales para organizaciones y profesionales</small></span>
+      <span class="wordmark">EQUALITY<br>CONSULTORES<small>Servicios integrales para organizaciones y profesionales</small></span>
     </a>
     <div>Región del Biobío · Atención en todo Chile</div>
     <a href="#inicio">Volver arriba ↑</a>
