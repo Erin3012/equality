@@ -1,6 +1,6 @@
 # Equality Consultores
 
-Sitio estático de Equality Consultores: curso PAC, objetivos, equipo, testimonios y contacto.
+Sitio estático de Equality Consultores: portada con servicios, identidad, acreditaciones, clientes y contacto.
 
 ## Archivos
 
