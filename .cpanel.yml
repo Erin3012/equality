@@ -1,11 +1,10 @@
 # Tarea de despliegue para cPanel (Git Version Control → "Deploy HEAD Commit").
 # Copia el sitio estático a la carpeta document root del subdominio.
-# Cambia SUBDOMINIO por el nombre del subdominio que crees en cPanel
-# (por defecto cPanel usa ~/public_html/<subdominio>).
+# Subdominio: equalityconsultores.qlc.cl (carpeta ~/public_html/equalityconsultores).
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/SUBDOMINIO
+    - export DEPLOYPATH=$HOME/public_html/equalityconsultores
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH/
     - /bin/cp -R assets $DEPLOYPATH/
