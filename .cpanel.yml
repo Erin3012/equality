@@ -6,5 +6,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=$HOME/public_html/equalityconsultores
     - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH/
     - /bin/cp -R assets $DEPLOYPATH/
+    - /bin/cp -R servicios $DEPLOYPATH/
+    - /bin/cp index.html $DEPLOYPATH/
